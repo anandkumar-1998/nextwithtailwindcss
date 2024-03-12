@@ -31,14 +31,14 @@ export default function Sidebar2({ children }) {
   console.log(location);
   return (
     <div className="container">
-        <div className="sm:flex-row bg-black py-2">
+        <div className="">
           <button
             data-drawer-target="sidebar-multi-level-sidebar"
             data-drawer-toggle="sidebar-multi-level-sidebar"
             aria-controls="sidebar-multi-level-sidebar"
             type="button"
             onClick={toggleSidebar}
-            class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-black dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-black dark:focus:ring-gray-600"
           >
             <span class="sr-only">Open sidebar</span>
             <LuMenuSquare size={20}/>
